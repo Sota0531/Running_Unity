@@ -11,7 +11,11 @@ public class MovingPlayer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground")||collision.gameObject.CompareTag("CanGoingGround"))
         {
-            NowJunpNum = 0;
+            //すり抜け床を使った多段ジャンプ防止
+            if(rBody2D.velocity.y <= 0){
+                NowJunpNum = 0;
+            }
+            
         }
     }
 
