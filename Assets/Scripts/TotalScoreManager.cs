@@ -1,13 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class TotalScoreManager : MonoBehaviour
 {
-    private int Score = 0;
+    private int Score;
+    private TMP_Text _scoreText;
+
+    void Start(){
+        Score = 0;
+        _scoreText = GetComponent<TMP_Text>();
+        _scoreText.text = "score:0";
+    }
 
     public void AddScore(int addnum){
         Score += addnum;
+        _scoreText.text = "score:" + Score.ToString();
     }
 
     public int GetScore(){
