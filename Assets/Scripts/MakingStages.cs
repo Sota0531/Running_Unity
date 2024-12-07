@@ -12,15 +12,6 @@ public class MakingStages : MonoBehaviour
     {
         stageSpawner = GameObject.Find("StageFactory").GetComponent<StageSpawner>();
         player = GameObject.Find("Player");
-        //SetObjectCollisionActive.SetCollisionActive(false,line,this.gameObject);
-    }
-
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
     private void OnTriggerExit2D(Collider2D Col){
         if(Col.gameObject.CompareTag("Player")){

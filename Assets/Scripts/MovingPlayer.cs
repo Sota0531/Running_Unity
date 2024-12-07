@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MovingPlayer : MonoBehaviour
 {
-    private Rigidbody2D rBody2D;
     [SerializeField] float speed;
+    [SerializeField] Rigidbody2D rBody2D;
     private int NowJunpNum;
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -18,15 +18,10 @@ public class MovingPlayer : MonoBehaviour
             
         }
     }
-
-    private void Start()
-    {
-        rBody2D = GetComponent<Rigidbody2D>();
-    }
     // Update is called once per frame
     void Update()
     {
-        transform.position += speed * transform.right * Time.deltaTime;
+        transform.position +=  Time.deltaTime * speed * transform.right;
         if (Input.GetKeyDown(KeyCode.Space) && NowJunpNum < 2)
         {
             rBody2D.velocity = Vector2.zero;
