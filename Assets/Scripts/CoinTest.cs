@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class CoinTest : MonoBehaviour
 {
-    //private int coinScore = 1;
+    private int coinScore = 1;
 
     void Start (){
 
     }
 
-    void OnTriggerEnter2D(Collider2D col){
+    public int GetCoinScore(){
+        return coinScore;
+    }
+
+    public void DestroyThisObject(){
         Destroy(this.gameObject);
-        
     }
 }
