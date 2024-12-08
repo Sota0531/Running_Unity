@@ -7,23 +7,12 @@ public class ItemGetter : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rBody2D;
     [SerializeField] GameObject scoreText;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.CompareTag("Coins")){
-            int num = col.gameObject.GetComponent<CoinTest>().GetCoinScore();
+            
+            int num = col.gameObject.GetComponent<ICoin>().GetCoinScore();
             //Debug.Log(num);
-            col.gameObject.GetComponent<CoinTest>().DestroyThisObject();
+            col.gameObject.GetComponent<ICoin>().DestroyThisObject();
             scoreText.GetComponent<TotalScoreManager>().AddScore(num);
         }
     }
