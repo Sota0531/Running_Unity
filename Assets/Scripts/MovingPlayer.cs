@@ -9,6 +9,7 @@ public class MovingPlayer : MonoBehaviour
     private int NowJunpNum;
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //多段ジャンプ制御
         if (collision.gameObject.CompareTag("Ground")||collision.gameObject.CompareTag("CanGoingGround"))
         {
             //すり抜け床を使った多段ジャンプ防止

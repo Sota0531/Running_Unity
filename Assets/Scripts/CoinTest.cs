@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class CoinTest : MonoBehaviour
 {
-    [SerializeField] int CoinScore;
+    //private int coinScore = 1;
+
+    void Start (){
+
+    }
 
     void OnTriggerEnter2D(Collider2D col){
         Destroy(this.gameObject);
+        
     }
 }
