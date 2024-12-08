@@ -265,7 +265,7 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
+  m_SurfaceArc: 90
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
@@ -326,6 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3547226966a4b77b2371ee56806053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Collider: {fileID: 8789933452250677376}
   nowGoing: 0
 --- !u!50 &2216941246043418674
 Rigidbody2D:
@@ -724,7 +725,7 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
+  m_SurfaceArc: 90
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
@@ -785,6 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3547226966a4b77b2371ee56806053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Collider: {fileID: 6765773999988882919}
   nowGoing: 0
 --- !u!50 &5778617911409129528
 Rigidbody2D:

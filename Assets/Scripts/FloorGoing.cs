@@ -2,13 +2,13 @@ using UnityEngine;
 public class FloorGoing : MonoBehaviour
 {
     private GameObject player;
-    private Collider2D _Collider;
+    [SerializeField] Collider2D _Collider;
     //床とプレイヤーが接触していないかを記録する変数
     [SerializeField] bool nowGoing;
     void Start()
     {
         player = GameObject.Find("Player");
-        _Collider = GetComponent<Collider2D>();
+        //_Collider = GetComponent<Collider2D>();
     }
     private void OnTriggerEnter2D(Collider2D collision){
         
