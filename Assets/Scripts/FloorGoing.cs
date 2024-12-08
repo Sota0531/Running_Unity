@@ -8,7 +8,6 @@ public class FloorGoing : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player");
-        //_Collider = GetComponent<Collider2D>();
     }
     private void OnTriggerEnter2D(Collider2D collision){
         
