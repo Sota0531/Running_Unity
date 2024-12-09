@@ -6,6 +6,7 @@ public class CameraMoveingController : MonoBehaviour
 {
     [SerializeField] GameObject playerObj;
     private Vector3 offset;
+    //カメラの初期Y座標を保持
     private float lockY;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,9 @@ public class CameraMoveingController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = playerObj.transform.position + offset;
-        transform.position = new Vector3(transform.position.x, lockY,transform.position.z);
+        // transform.position = playerObj.transform.position + offset;
+        // カメラのY座標を固定
+        // transform.position = new Vector3(transform.position.x, lockY,transform.position.z);
+        transform.position = new Vector3(playerObj.transform.position.x + offset.x, lockY,playerObj.transform.position.z + offset.z);
     }
 }
