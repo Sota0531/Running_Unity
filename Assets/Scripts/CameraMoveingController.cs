@@ -18,9 +18,7 @@ public class CameraMoveingController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        // transform.position = playerObj.transform.position + offset;
-        // カメラのY座標を固定
-        // transform.position = new Vector3(transform.position.x, lockY,transform.position.z);
+        // カメラのY座標を固定しながら追従
         transform.position = new Vector3(playerObj.transform.position.x + offset.x, lockY,playerObj.transform.position.z + offset.z);
     }
 }
