@@ -10,12 +10,16 @@ public class FloorGoing : MonoBehaviour
         player = GameObject.Find("Player");
     }
     private void OnTriggerEnter2D(Collider2D collision){
-        
-        nowGoing = true;
+        if(collision.gameObject == player){
+            nowGoing = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision){
-        nowGoing = false;
-        SetObjectCollisionActive.SetCollisionActive(true,player,this.gameObject);
+        if(collision.gameObject == player){
+            nowGoing = false;
+            SetObjectCollisionActive.SetCollisionActive(true,player,this.gameObject);
+        }
+        
     }
     void Update()
     {
