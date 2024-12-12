@@ -4,3 +4,7 @@ public interface ICoin{
     int GetCoinScore();
 
 }
+
+public interface IItem{
+    
+}

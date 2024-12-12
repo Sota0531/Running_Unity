@@ -11,12 +11,12 @@ public class TotalScoreManager : MonoBehaviour
     void Start(){
         Score = 0;
         _scoreText = GetComponent<TMP_Text>();
-        _scoreText.text = "score:0";
+        _scoreText.text = "score:" + Score.ToString().PadLeft(7, '0');
     }
 
     public void AddScore(int addnum){
         Score += addnum;
-        _scoreText.text = "score:" + Score.ToString();
+        _scoreText.text = "score:" + Score.ToString().PadLeft(7, '0');
     }
 
     public int GetScore(){
