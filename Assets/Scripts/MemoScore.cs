@@ -17,10 +17,6 @@ public class MemoScore : MonoBehaviour
         
     }
 
-    public void GoStartScene(int Score){
-        
-    }
-
     public int GetScore(){
         return score;
     }
