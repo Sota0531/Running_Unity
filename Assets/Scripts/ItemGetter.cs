@@ -7,9 +7,9 @@ public class ItemGetter : MonoBehaviour
 {
     [SerializeField] GameObject scoreText;
     void OnTriggerEnter2D(Collider2D col){
-        if(col.gameObject.CompareTag("Coins")){
-            int num = col.gameObject.GetComponent<ICoin>().GetCoinScore();
-            col.gameObject.GetComponent<ICoin>().DestroyThisObject();
+        if(col.gameObject.TryGetComponent<ICoin>(out var coin)){
+            int num = coin.GetCoinScore();
+            coin.DestroyThisObject();
             scoreText.GetComponent<TotalScoreManager>().AddScore(num);
         }
     }
