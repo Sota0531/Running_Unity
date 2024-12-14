@@ -5,7 +5,6 @@ using UnityEngine;
 public class MemoScore : MonoBehaviour
 {
     public int score = -1;
-    [SerializeField] TotalScoreManager scoreManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +17,15 @@ public class MemoScore : MonoBehaviour
         
     }
 
-    public void ToGoStartScene(){
-        score = scoreManager.GetScore();
+    public void GoStartScene(int Score){
+        
     }
 
     public int GetScore(){
         return score;
+    }
+
+    public void SetScore(int score){
+        this.score = score;
     }
 }
