@@ -6,11 +6,11 @@ using UnityEngine;
 public class TotalScoreManager : MonoBehaviour
 {
     private int Score;
-    private TMP_Text _scoreText;
+    [SerializeField] TMP_Text _scoreText;
 
     void Start(){
         Score = 0;
-        _scoreText = GetComponent<TMP_Text>();
+        //_scoreText = GetComponent<TMP_Text>();
         _scoreText.text = "score:" + Score.ToString().PadLeft(7, '0');
     }
 

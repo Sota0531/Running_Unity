@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class ItemGetter : MonoBehaviour
 {
-    [SerializeField] Rigidbody2D rBody2D;
     [SerializeField] GameObject scoreText;
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.CompareTag("Coins")){
