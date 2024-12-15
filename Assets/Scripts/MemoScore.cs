@@ -5,13 +5,12 @@ using System;
 
 public class MemoScore : MonoBehaviour
 {
-    private int[] score;
+    private int[] score = new int[100];
     int nowMemoNum = 0;
     // Start is called before the first frame update
     void Start()
     {
         DontDestroyOnLoad(this);
-        score = new int[100];
         score[0] = 0;
     }
 
@@ -23,6 +22,10 @@ public class MemoScore : MonoBehaviour
 
     public int[] GetScore(){
         return score;
+    }
+    public int GetHighScore(){
+        ScoreSortDown();
+        return score[0];
     }
 
     public void SetScore(int num){
