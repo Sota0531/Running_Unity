@@ -6,11 +6,13 @@ using System;
 public class MemoScore : MonoBehaviour
 {
     private int[] score;
+    int nowMemoNum = 0;
     // Start is called before the first frame update
     void Start()
     {
         DontDestroyOnLoad(this);
         score = new int[100];
+        score[0] = 0;
     }
 
     // Update is called once per frame
@@ -23,13 +25,13 @@ public class MemoScore : MonoBehaviour
         return score;
     }
 
-    public void SetScore(int i ,int num){
-        if(i > score.Length){
-            score[i-score.Length] = num;
-            Debug.Log("配列範囲外");
-        }else{
-            score[i] = num;
+    public void SetScore(int num){
+        score[nowMemoNum] = num;
+        nowMemoNum++;
+        if(nowMemoNum >= score.Length){
+            nowMemoNum = score.Length-1;
         }
+        ScoreSortDown();
     }
 
     public void ScoreSortDown(){
