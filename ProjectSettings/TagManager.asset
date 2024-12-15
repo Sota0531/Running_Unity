@@ -8,6 +8,7 @@ TagManager:
   - CanGoingGround
   - Coins
   - Obstacles
+  - OnlyScoreManager
   layers:
   - Default
   - TransparentFX

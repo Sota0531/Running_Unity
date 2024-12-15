@@ -5,13 +5,16 @@ using System;
 
 public class MemoScore : MonoBehaviour
 {
-    private int[] score = new int[100];
+    public int[] score = new int[100];
     int nowMemoNum = 0;
     // Start is called before the first frame update
     void Start()
     {
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("OnlyScoreManager");
+        if (objs.Length > 1){
+            Destroy(this.gameObject);
+        }
         DontDestroyOnLoad(this);
-        score[0] = 0;
     }
 
     // Update is called once per frame
@@ -21,6 +24,7 @@ public class MemoScore : MonoBehaviour
     }
 
     public int[] GetScore(){
+        ScoreSortDown();
         return score;
     }
     public int GetHighScore(){

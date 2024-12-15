@@ -7,11 +7,11 @@ public class HighScorePrinter : MonoBehaviour
 {
     private int highScore = 0;
     [SerializeField] TMP_Text scoreText;
-    [SerializeField] MemoScore memoScore;
+    private MemoScore memoScore;
     // Start is called before the first frame update
     void Start()
     {
-        
+        memoScore = GameObject.Find("SceneScoreManager").GetComponent<MemoScore>();
         highScore = memoScore.GetHighScore();
         scoreText.text = "HIGH SCORE:" + highScore.ToString().PadLeft(7,'0');
     }

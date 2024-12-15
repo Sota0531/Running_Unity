@@ -10,6 +10,7 @@ public class PlayerLifeManager : MonoBehaviour
     private int nowLife = 5;
 
     [SerializeField] TMP_Text _LifeText;
+    [SerializeField] PlayerGameOver playerGameOver;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +36,7 @@ public class PlayerLifeManager : MonoBehaviour
     public void RemoveLife(int removenum){
         nowLife -= removenum;
         if(nowLife <= 0){
-            //TODO: ゲームオーバー処理
+            playerGameOver.GameOver();
         }else{
             _LifeText.text = "Life:" + nowLife.ToString();
         }
