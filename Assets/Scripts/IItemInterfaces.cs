@@ -6,5 +6,5 @@ public interface ICoin{
 }
 
 public interface IItem{
-    
+    int GetItemID();
 }
