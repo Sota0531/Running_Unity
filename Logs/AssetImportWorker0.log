@@ -589,3 +589,35 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1841.667593 seconds.
+  path: Assets/Prefabs/StageParts/Rock.prefab
+  artifactKey: Guid(b0e5564bb2acc4b9180a898e72a2af5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/StageParts/Rock.prefab using Guid(b0e5564bb2acc4b9180a898e72a2af5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85b049ef7ec1e477086a7be5276da824') in 0.115251 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 17.546642 seconds.
+  path: Assets/Prefabs/StageParts/ObstacleRock.prefab
+  artifactKey: Guid(b0e5564bb2acc4b9180a898e72a2af5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/StageParts/ObstacleRock.prefab using Guid(b0e5564bb2acc4b9180a898e72a2af5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ae9d1787f75f88726a894dbe3339175') in 0.006593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 4.475881 seconds.
+  path: Assets/Prefabs/StageParts/Itemhealing.prefab
+  artifactKey: Guid(d6e38d20f33f648a69803d49a775b4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/StageParts/Itemhealing.prefab using Guid(d6e38d20f33f648a69803d49a775b4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c5785d2cbad0cbaef2063f3a19ec80') in 0.001098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 36.063605 seconds.
+  path: Assets/Prefabs/StageParts/Itemhealing.prefab
+  artifactKey: Guid(d6e38d20f33f648a69803d49a775b4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/StageParts/Itemhealing.prefab using Guid(d6e38d20f33f648a69803d49a775b4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb0d16f966746f19144ec63617ce166') in 0.002920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
